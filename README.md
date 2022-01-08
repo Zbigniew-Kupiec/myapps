@@ -5,9 +5,10 @@
 - simple text editor (based on Notepad for <b>Windows</b>)
 - version `2022.1` (build `#MN - 222.01.06`)
 - new design black color (menu, textarea, toolbar, bottom bar) app
+- **this is the Polish version**
 ---
 - addons - available soon January 2022
-  - choice color design menu and textarea
+  - choice color design menu and textarea - @ (at) work 
   - ???? no ideas // soon January 2022 or February 2022
   - ???? no ideas // soon January 2022 or February 2022
 ---

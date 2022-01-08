@@ -201,6 +201,7 @@ public class Frame extends JFrame {
 
         }
     }
+    @SuppressWarnings("ConstantConditions")
     void MyMenuBar() throws ClassNotFoundException, UnsupportedLookAndFeelException,
             InstantiationException, IllegalAccessException {
         UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
@@ -315,7 +316,7 @@ public class Frame extends JFrame {
             public void actionPerformed(ActionEvent e) { new FixedWidthLabel(); }
         };
         menuHelp.add(actionFaq);
-        menuSettings = menuBar.add(new JMenu("Ustawwienia"));
+        menuSettings = (JMenu) new JMenu((Action) new ImageIcon("src\\img\\text_color_icon.png")).add(menuBar);
         actionSettingsBlack = new ActionSettingsBlack("Czarny Motyw", "ctrl B",
                 new ImageIcon("src\\img\\text_color_icon.png"), KeyEvent.VK_B);
         actionSettingsWhite = new ActionSettingsWhite("Biały Motyw", "ctrl W",

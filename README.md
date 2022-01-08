@@ -8,9 +8,7 @@
 - **this is the Polish version**
 ---
 - addons - available soon January 2022
-  - choice color design menu and textarea - @ (at) work 
-  - ???? no ideas // soon January 2022 or February 2022
-  - ???? no ideas // soon January 2022 or February 2022
+  - choice color design menu and textarea - @ (at) work
 ---
 
 

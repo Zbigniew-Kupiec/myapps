@@ -12,13 +12,15 @@ import java.nio.charset.StandardCharsets;
 public class Frame extends JFrame {
     JMenu menuHelp;
     JMenu menuFile;
+    JMenu menuSettings;
     private final JLabel status;
     public JMenu menuSize;
     static JMenu menuOption;
     public static JTextArea textArea;
     JScrollPane scrollPane;
     JFileChooser chooserFile;
-    Action actionSave, actionNew, actionExit, actionLoad, actionOpen, actionFaq, actionFind, actionFontsColor, actionPrint;
+    Action actionSave, actionNew, actionExit, actionLoad, actionOpen, actionFaq, actionFind, actionFontsColor, actionPrint,
+            actionSettingsBlack, actionSettingsWhite;
     static Action actionEdit, actionCopy, actionPaste, actionCount, actionSelectAll, actionDelete, actionFonts;
 
     public Frame() throws ClassNotFoundException, UnsupportedLookAndFeelException,
@@ -313,6 +315,12 @@ public class Frame extends JFrame {
             public void actionPerformed(ActionEvent e) { new FixedWidthLabel(); }
         };
         menuHelp.add(actionFaq);
+        menuSettings = menuBar.add(new JMenu("Ustawwienia"));
+        actionSettingsBlack = new ActionSettingsBlack("Czarny Motyw", "ctrl B",
+                new ImageIcon("src\\img\\text_color_icon.png"), KeyEvent.VK_B);
+        actionSettingsWhite = new ActionSettingsWhite("Biały Motyw", "ctrl W",
+                new ImageIcon("src\\img\\text_color_icon.png"), KeyEvent.VK_B);
+        menuSettings.add(actionSettingsBlack);
     }
 
     public final JMenuBar menuBar = new JMenuBar();

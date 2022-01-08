@@ -206,3 +206,27 @@ class ActionPrint extends AbstractAction {
         Print.printComponent(Frame.textArea);
     }
 }
+class ActionSettingsBlack extends AbstractAction {
+    public ActionSettingsBlack(String name, String shortKey, Icon icon, int mnemonicKey) {
+        this.putValue(Action.NAME, name);
+        this.putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke(shortKey));
+        this.putValue(Action.SMALL_ICON, icon);
+        this.putValue(Action.MNEMONIC_KEY, mnemonicKey);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+    }
+}
+class ActionSettingsWhite extends AbstractAction {
+    public ActionSettingsWhite(String name, String shortKey, Icon icon, int mnemonicKey) {
+        this.putValue(Action.NAME, name);
+        this.putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke(shortKey));
+        this.putValue(Action.SMALL_ICON, icon);
+        this.putValue(Action.MNEMONIC_KEY, mnemonicKey);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+}

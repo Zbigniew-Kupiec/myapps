@@ -238,12 +238,7 @@ class ActionSettingsBlack extends AbstractAction {
         UIManager.getLookAndFeelDefaults().put("MenuItem[Enabled].textForeground", new Color(225, 225, 225));
         UIManager.put("control", new Color(30, 30, 30));
         UIManager.put("Menu[Enabled].textForeground", new Color(225, 225, 225));
-        try {
-            new Frame().status.setForeground(new Color(224, 224, 224));
-        } catch (ClassNotFoundException | UnsupportedLookAndFeelException | InstantiationException | IllegalAccessException ex) {
-            ex.printStackTrace();
-        }
-
+        Frame.status.setForeground(new Color(224, 224, 224));
         for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
             if ("Nimbus".equals(info.getName())) {
                 try {

@@ -13,7 +13,7 @@ public class Frame extends JFrame {
     JMenu menuHelp;
     JMenu menuFile;
     JMenu menuSettings;
-    public final JLabel status;
+    public static JLabel status;
     public JMenu menuSize;
     static JMenu menuOption;
     public static JTextArea textArea;

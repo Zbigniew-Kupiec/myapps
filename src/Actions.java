@@ -260,6 +260,17 @@ class ActionSettingsWhite extends AbstractAction {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        Frame.textArea.setBackground(new Color(224, 224, 224));
+        Frame.textArea.setForeground(new Color(0, 0, 0, 215));
+        for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+            if ("Nimbus".equals(info.getName())) {
+                try {
+                    UIManager.setLookAndFeel(info.getClassName());
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+                    ex.printStackTrace();
+                }
+                break;
+            }
+        }
     }
 }

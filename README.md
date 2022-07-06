@@ -7,8 +7,9 @@
 - new design black color (menu, textarea, toolbar, bottom bar) app
 - **this is the Polish version**
 ---
-- addons - available soon January 2022
-  - choice color design menu and textarea - @ (at) work
+- addons - available soon `August 2022`
+  - choice color design menu and textarea - @ (at) work ( `17.07.2022` )
+  - add english version ( `??.0?.2022` )
 ---
 
 
